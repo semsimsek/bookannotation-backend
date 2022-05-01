@@ -1,7 +1,10 @@
 using bookannotation_api.Repositories.Base;
 using bookannotation_api.Repositories.Book;
 using bookannotation_api.Repositories.Note;
+using bookannotation_api.Repositories.User;
 using bookannotation_api.Services.Book;
+using bookannotation_api.Services.Note;
+using bookannotation_api.Services.User;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -20,8 +23,11 @@ builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(build
 builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
 builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<INoteRepository, NoteRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
-builder.Services.AddScoped<IBookService, BookService>();  
+builder.Services.AddScoped<IBookService, BookService>();
+builder.Services.AddScoped<INoteService, NoteService>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 
 builder.Services.AddControllers();

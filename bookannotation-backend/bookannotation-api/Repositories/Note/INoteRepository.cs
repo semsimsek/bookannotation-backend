@@ -1,6 +1,8 @@
 ﻿namespace bookannotation_api.Repositories.Note
 {
-    public interface INoteRepository
+    using bookannotation_api.Repositories.Base;
+    using bookannotation_api.Models;
+    public interface INoteRepository : IBaseRepository<Note>
     {
 
     }

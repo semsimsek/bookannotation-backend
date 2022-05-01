@@ -26,9 +26,9 @@
 
   <ItemGroup>
     <Folder Include="Adapters\" />
-    <Folder Include="Helpers\" />
-    <Folder Include="Factories\" />
     <Folder Include="Configuration\" />
+    <Folder Include="Factories\" />
+    <Folder Include="Helpers\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
 

@@ -13,7 +13,7 @@ namespace bookannotation_api.Controllers
             _bookService = bookService;
         }
  
-        [HttpGet]
+        [HttpGet, Authorize]
         public IActionResult GetAll()
         {
             var bookList = _bookService.GetAllBooks(1);
