@@ -28,7 +28,6 @@
     <Folder Include="Adapters\" />
     <Folder Include="Configuration\" />
     <Folder Include="Factories\" />
-    <Folder Include="Helpers\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
 

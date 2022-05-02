@@ -2,6 +2,7 @@
 
 namespace bookannotation_api.Data
 {
+    using bookannotation_api.Models;
     public class DataContext : DbContext
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }

@@ -1,5 +1,4 @@
 ﻿////Datamodels
-global using bookannotation_api.Models;
 global using bookannotation_api.Data;
 global using bookannotation_api.Models.Dtos;
 
